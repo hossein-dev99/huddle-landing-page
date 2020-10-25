@@ -1,0 +1,135 @@
+*, *:after, *:before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+.wrapper {
+  background: #674baf url(../images/bg-mobile.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  max-width: 375px;
+  margin: 0 auto;
+}
+
+.logo {
+  padding: 25px 0 0 25px;
+  margin-bottom: 35px;
+}
+.logo img {
+  width: 105px;
+}
+
+.content {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  padding: 36px;
+  font-family: Poppins, serif;
+  color: #fff;
+  text-align: center;
+}
+.content img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 50px;
+}
+.content h1 {
+  font-family: "poppins", serif;
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.content p {
+  font-family: "Open Sans", serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.content button {
+  padding: 10px;
+  border-radius: 20px;
+  width: 60%;
+  border: none;
+  box-shadow: 0 2px 13px -2px black;
+  margin-bottom: 40px;
+}
+
+.social ul {
+  list-style-type: none;
+}
+.social ul li {
+  display: inline-block;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  padding: 2px;
+  margin-right: 3px;
+}
+
+@media only screen and (min-width: 578px) {
+  .wrapper {
+    background: #674baf url(../images/bg-desktop.svg) 0/contain no-repeat;
+    max-width: 1440px;
+    height: 100vh;
+  }
+
+  .logo {
+    padding: 40px 0 0 40px;
+  }
+  .logo img {
+    width: 200px;
+  }
+
+  .content {
+    flex-direction: row;
+    align-items: stretch;
+    padding: 36px;
+    text-align: center;
+  }
+  .content .image {
+    width: 100%;
+  }
+  .content h1 {
+    max-width: 300px;
+  }
+  .content p {
+    font-size: 12px;
+    max-width: 352px;
+  }
+  .content button {
+    width: 130px;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 40px 40px 0px 40px;
+    width: 100%;
+  }
+
+  .social {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-bottom: 40px;
+  }
+
+  .head {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+}
